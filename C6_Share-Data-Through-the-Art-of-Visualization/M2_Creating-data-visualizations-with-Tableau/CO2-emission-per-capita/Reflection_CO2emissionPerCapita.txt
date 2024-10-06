@@ -1,0 +1,18 @@
+Reflection
+
+In this activity, you used Tableau to link data together and visualize it. In the text box below, write 2-3 sentences (40-60 words) in response to each of the following questions:
+
+What did linking data from multiple sources allow you to do with your visualization in Tableau? 
+
+What other kinds of datasets could you link to the four you used in this activity? What kinds of comparisons or insights could you make?
+
+If you couldn’t link data in this way, how would you make complex comparative datasets and visualizations like this?
+
+
+
+
+1. Linking data from multiple sources allowed me to create a unified visualization in Tableau that compares CO₂ emissions per capita by country over time, incorporating GDP, population, and energy use. This approach made it possible to see emissions trends and their relationship with economic and demographic factors.
+
+2. In addition to the datasets used, linking datasets on renewable energy use, climate policies, or air quality would add more context to the analysis. For example, I could compare how countries' renewable energy adoption correlates with CO₂ emissions trends, offering insights into the impact of sustainable practices on emissions.
+
+3. Without the ability to link data directly, I would need to manually combine datasets in a spreadsheet or database before importing them into Tableau. This approach is more time-consuming and prone to errors, making it harder to maintain or update the data for analysis.
