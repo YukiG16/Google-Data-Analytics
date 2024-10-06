@@ -1,0 +1,13 @@
+Reflection
+In this activity, you created a dashboard that can help you share your findings. In the text box below, write 2-3 sentences (40-60 words) in response to each of the
+following questions:
+How did you arrange the sheets onto the dashboard to effectively present the data?
+What are some other ways in which you might use dashboards?
+Is there a dashboard that you would like to create? If so, what kinds of data might it feature?
+
+
+To effectively present the data, I placed the map visualization from Sheet 1 at the top of the dashboard and the line chart from Sheet 2 beneath it. This layout allows for a clear view of both country-level and regional CO₂ data over time, giving viewers a comprehensive understanding of emissions patterns.
+
+Dashboards are also useful for monitoring business metrics, tracking project progress, and displaying financial performance. They can combine multiple data sources into a single, interactive view, which makes it easier to identify trends and make data-driven decisions.
+
+I would like to create a dashboard that tracks global renewable energy production. This dashboard could feature data on energy sources like solar, wind, and hydroelectric, alongside metrics such as production capacity, usage trends, and growth over time.
