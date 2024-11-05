@@ -1,0 +1,70 @@
+---
+title: "C7M5 Palmer Penguins"
+output: html_document
+---
+
+Google Data Analytics
+Course 7 Data Analysis with R Programming
+Module 5 Documentation and reports
+
+### Prepare data
+
+1.install both ggplot2 and the Palmer Penguins data set. 
+
+#```{r install packages}
+install.packages("ggplot2") 
+install.packages("palmerpenguins")
+#```
+
+2.Load ggplot2 and the dataset.
+
+```{r load packages}
+library(ggplot2) 
+library(palmerpenguins)
+library(knitr)
+```
+
+3.Examine the data frame for the penguins data. 
+
+#```{r View function}
+View(penguins)
+#```
+
+#```{r data function}
+data(penguins) 
+#```
+
+```{r kable function}
+kable(head(penguins))
+```
+
+The penguins dataset contains size measurements for three penguin species (Adelie, Chinstrap, and Gentoo) that live on the Palmer Archipelago in Antarctica. The columns include information such as body mass, flipper length, and bill length. 
+
+### Create a plot in ggplot2
+
+ggplot(data = penguins): In ggplot2, you begin a plot with the ggplot() function. The ggplot() function creates a coordinate system that you can add layers to. The first argument of the ggplot() function is the dataset to use in the plot. In this case, it’s “penguins.”
+
++: Then, you add a “+” symbol to add a new layer to your plot. You complete your plot by adding one or more layers to ggplot().
+
+geom_point(): Next, you choose a geom by adding a geom function. The geom_point() function uses points to create scatterplots, the geom_bar function uses bars to create bar charts, and so on. In this case, choose the geom_point function to create a scatter plot of points. The ggplot2 package comes with many different geom functions. You’ll learn more about geoms later in this course.
+
+(mapping = aes(x = flipper_length_mm, y = body_mass_g)): Each geom function in ggplot2 takes a mapping argument. This defines how variables in your dataset are mapped to visual properties. The mapping argument is always paired with the aes() function. The x and y arguments of the aes() function specify which variables to map to the x-axis and the y-axis of the coordinate system. In this case, you want to map the variable “flipper_length_mm” to the x-axis, and the variable “body_mass_g” to the y-axis. 
+
+```{r ggplot function}
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species, shape = species)) +
+  geom_point() +
+  labs(
+    title = "Palmer Penguins: Body Mass vs. Flipper Length",
+    subtitle = "Sample of Three Penguin Species",
+    caption = "Data collected by Dr. Kristen Gorman"
+  ) +
+  annotate("text", x = 220, y = 3500, label = "The Gentoos are the largest 
+           The larger the penguin, 
+           the longer the flipper")
+```
+
+The plot shows a positive relationship between the two variables. In other words, the larger the penguin, the longer the flipper. 
+
+```{r save your plot}
+ggsave('PalmerPenguins_BodyMass_FlipperLength.png')
+```
