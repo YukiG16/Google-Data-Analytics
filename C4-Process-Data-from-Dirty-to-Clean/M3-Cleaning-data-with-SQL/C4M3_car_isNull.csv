@@ -1,0 +1,3 @@
+make,fuel_type,num_of_doors,body_style,drive_wheels,engine_location,wheel_base,length,width,height,curb_weight,engine_type,num_of_cylinders,engine_size,fuel_system,compression_ratio,horsepower,city_mpg,highway_mpg,price
+dodge,gas,,sedan,fwd,front,93.7,157.3,63.8,50.6,2191,ohc,four,98,mpfi,7.6,102,24,30,8558
+mazda,diesel,,sedan,fwd,front,98.8,177.8,66.5,55.5,2443,ohc,four,122,idi,22.7,64,36,42,10795
